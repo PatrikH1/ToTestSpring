@@ -1,0 +1,56 @@
+package com.example.demo.user;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class UserDaoService
+{
+    public static int usersCount=5;
+
+    // Creating an instance of ArrayList
+    private static List<User> users=new ArrayList<>();
+
+    //static block
+    static
+    {
+        // Adding users to the list
+        users.add(new User(1, "John", new Date()));
+        users.add(new User(2, "Robert", new Date()));
+        users.add(new User(3, "Adam", new Date()));
+        users.add(new User(4, "Andrew", new Date()));
+        users.add(new User(5, "Jack", new Date()));
+    }
+
+    // Method that retrieve all users from the list
+    public List<User> findAll()
+    {
+        return users;
+    }
+
+    // Method that add the user in the list
+    public User save(User user)
+    {
+        if(user.getId()==null)
+        {
+            // Increments the user id
+            user.setId(++usersCount);
+        }
+        users.add(user);
+        return user;
+    }
+
+    // Method that find a particular user from the list
+    public User findOne(int id)
+    {
+        for(User user:users)
+        {
+            if(user.getId()==id)
+                return user;
+        }
+        return null;
+    }
+}
