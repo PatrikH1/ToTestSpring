@@ -27,8 +27,6 @@ import java.util.List;
 // http://localhost:8080/helloTwoName
 // http://localhost:8080/helloTwoName?firstName=Patrik&secondName=Hulthén
 //
-// Some more comments.
-// New
 // Använd också Postman för att prova.
 
 @SpringBootApplication
