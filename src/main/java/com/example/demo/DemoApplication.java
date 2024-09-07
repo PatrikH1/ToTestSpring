@@ -18,6 +18,7 @@ import java.util.List;
 //
 // Det första GET-anropet
 // http://localhost:8080/user
+// http://localhost:8080/user/3
 //
 // Det andra GET-anropet
 // http://localhost:8080/hello
