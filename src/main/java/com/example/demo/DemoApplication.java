@@ -50,7 +50,7 @@ public class DemoApplication {
 		return service.findOne(id);
 	}
 
-	//method that posts a new user detail
+	// Method that posts a new user detail
 	@PostMapping("/users")
 	public void createUser(@RequestBody User user)
 	{
