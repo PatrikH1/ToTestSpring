@@ -43,14 +43,14 @@ public class DemoApplication {
 		return service.findAll();
 	}
 
-	// Retrieves a specific user detail
+	// Retrieves a specific user
 	@GetMapping("/users/{id}")
 	public User retriveUser(@PathVariable int id)
 	{
 		return service.findOne(id);
 	}
 
-	// Method that posts a new user detail
+	// Method that posts a new user
 	@PostMapping("/users")
 	public void createUser(@RequestBody User user)
 	{
