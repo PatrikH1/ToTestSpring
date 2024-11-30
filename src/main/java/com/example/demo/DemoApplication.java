@@ -19,6 +19,9 @@ import java.util.List;
 // To get the PostmanCollection, see files direct under demo,
 // PostmanCollection.json
 //
+// To start Postman:
+// Use Search and write Postman
+//
 // Det första GET-anropet
 // http://localhost:8080/user
 // http://localhost:8080/user/3
