@@ -13,6 +13,12 @@ import java.util.List;
 // på katalogen /c/Patrik/git/demo (det går att göra cd och detta som sökväg)
 // Starta gärna i ett Git Bash fönster så blir texten bättre.
 //
+// To see information about UserDaoService.java, go to the following link:
+// https://www.javatpoint.com/restful-web-services-path-variable
+//
+// To get the PostmanCollection, see files direct under demo,
+// PostmanCollection.json
+//
 // Det första GET-anropet
 // http://localhost:8080/user
 // http://localhost:8080/user/3
